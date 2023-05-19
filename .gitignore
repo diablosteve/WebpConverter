@@ -6,3 +6,7 @@
 /.vs/
 /WebpConverter/bin/
 /WebpConverter/obj/
+/packages
+/WebpConverter/obj/Debug/
+/WebpConverter/bin/Debug/WebpConverter.pdb
+/WebpConverter/bin/Debug/WebpConverter.exe
