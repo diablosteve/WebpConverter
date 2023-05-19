@@ -5,3 +5,5 @@
 /.vs/WebpConverter/v17
 /WebpConverter/bin
 /WebpConverter/obj
+/WebpConverter/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/WebpConverter/obj/Debug/WebpConverter.csproj.AssemblyReference.cache
