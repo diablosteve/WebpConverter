@@ -1,0 +1,17 @@
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.csproj.AssemblyReference.cache
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.csproj.SuggestedBindingRedirects.cache
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.csproj.CoreCompileInputs.cache
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\WebpConverter.exe.config
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\WebpConverter.exe
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\WebpConverter.pdb
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\ImageProcessor.dll
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\ImageProcessor.Plugins.WebP.dll
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\System.Drawing.Common.dll
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\System.ValueTuple.dll
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\ImageProcessor.xml
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\ImageProcessor.Plugins.WebP.xml
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\System.Drawing.Common.xml
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\bin\Debug\System.ValueTuple.xml
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.csproj.CopyComplete
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.exe
+C:\Users\tarii\source\repos\WebpConverter\WebpConverter\obj\Debug\WebpConverter.pdb
