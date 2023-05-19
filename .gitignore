@@ -6,6 +6,10 @@
 /.vs/
 /WebpConverter/bin/
 /WebpConverter/obj/
+/WebpConverter/bin
+/WebpConverter/obj
 /packages
 /WebpConverter/obj/Debug/
 /WebpConverter/bin/Debug/
+/WebpConverter/obj/Debug
+/WebpConverter/bin/Debug
