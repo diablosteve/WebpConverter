@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/WebpConverter/v17
+/WebpConverter/bin
+/WebpConverter/obj
