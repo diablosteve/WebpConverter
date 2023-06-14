@@ -15,11 +15,13 @@ namespace WebpConverter
         static void Main(string[] args)
         {
             bool isResize = true;
-            int newWidth = 760;
+            int newWidth = 0;
+            int newHeight = 0;
 
             string workingFolderPath = Path.Combine(Environment.CurrentDirectory, "workplace");
             List<string> fileEntries = Directory.GetFiles(workingFolderPath).ToList();
             foreach (string fileName in fileEntries) {
+                isResize = true;
                 var newFileName = Path.GetFileName(fileName);
                 newFileName = newFileName.Replace(Path.GetExtension(fileName), ".webp");
                 if (File.Exists(fileName))
@@ -33,15 +35,30 @@ namespace WebpConverter
                                 var thisImgFactory = imageFactory.Load(File.OpenRead(fileName))
                                     .Format(new WebPFormat())
                                     .Quality(100);
+                                var currentW = (double)thisImgFactory.Image.Width;
+                                var currentH = (double)thisImgFactory.Image.Height;
+                                if (newWidth == 0 && newHeight == 0) {
+                                    isResize = false;
+                                }
+                                else if (newWidth != 0 && newWidth >= currentW) {
+                                    isResize = false;
+                                }
+                                else if (newHeight != 0 && newHeight >= currentH) {
+                                    isResize = false;
+                                }
                                 if (isResize)
                                 {
-                                    int newHeight = (int)Math.Ceiling(((double)newWidth / (double)thisImgFactory.Image.Width) * (double)thisImgFactory.Image.Height);
+                                    if (newWidth != 0)
+                                    {
+                                        newHeight = (int)Math.Ceiling(((double)newWidth / currentW) * currentH);
+                                    }
+                                    else if (newHeight != 0) {
+                                        newWidth = (int)Math.Ceiling(((double)newHeight / currentH) * currentW);
+                                    }
                                     thisImgFactory.Resize(new Size(newWidth, newHeight)).Save(webPFileStream);
                                 }
                                 else {
-                                    thisImgFactory.Format(new WebPFormat())
-                                        .Quality(100)
-                                        .Save(webPFileStream);
+                                    thisImgFactory.Save(webPFileStream);
                                 }
                             }
                         }
